@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    consumer:
+      group-id: group-1
+      enable-auto-commit: true
+      auto-offset-reset: latest
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+      bootstrap-servers: localhost:9092
+
+server:
+  port: 8081
